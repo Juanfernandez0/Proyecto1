@@ -1,34 +1,45 @@
-.logo{
-    display: flex;
-    flex-wrap: wrap;
-    width: 130px;
-    padding-left: 25%;
-    padding-right: 0%; 
-    margin-right:0%;
-    border-right: 0%;
+.index{
+    background-color: #594433;
 
-}
-.sectionlogo{
-    padding-right: 0%; 
-    margin-right:0%;
-    border-right: 0%;
-
-}
-
-.navbar{
-    display: flex;
-    margin-left: 70%;
-    background-color: gray;
-    margin-top: 0%;
-    border-top: 0%;
-    padding-top: 0%;
-    padding-right: 15%;
-    margin-right: 15%;
-    
-    
 }
 
 .header{
-    border-top: 0%;
-    margin-top: 0%;
+    margin: 0px;
+    border: 0px;
+    background-color:#a68c69;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height:65px ;
+    justify-content: space-between;
+    padding-top: 0px1;
+}
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90px;
+    flex-direction: row;
+    padding-left: 40px;
+
+}
+.sectionlogo{
+
+}
+.listahija{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+}
+
+.listaprincipal{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+list-style: none;
+
+}
+
+.sectionlistaprincipal{
+    padding-right: 38%;
 }
