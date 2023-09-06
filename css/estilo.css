@@ -1,20 +1,20 @@
 .index{
     background-color: #04001d;
     padding-left: 5%;
-    padding-right: 5%   ;
+    padding-right: 5%;
 
 }
 
 .header{
-    margin: 0px;
-    border: 0px;
     background-color:#539dc9;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     height:65px ;
-    justify-content: space-between;
-    padding-top: 0px1;
+    padding-right: 5px;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 5px;
 }
 
 .logo{
@@ -22,13 +22,11 @@
     flex-wrap: wrap;
     width: 120px;
     flex-direction: row;
-    padding-left: 40px;
+    padding-left: 0px;
     padding-top: 5px;
 
 }
-.sectionlogo{
 
-}
 .listahija{
     padding-left: 20px;
     padding-right: 28px;
@@ -42,11 +40,13 @@ flex-direction: row;
 list-style: none;
 font-family: Arial, Helvetica, sans-serif;
 font-style: italic;
+padding-left: 100px;
 
 }
 
 .sectionlistaprincipal{
     padding-right: 400px;
+    max-width: 100%;
 }
 
 .sectionbanner{
@@ -58,15 +58,89 @@ font-style: italic;
 .banner{
     width: 1150px ;
     height: 400px;
-    padding-left: 33px;
-    padding-right: 33px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 20px;
-    position: absolute,
+    padding-top: 20px;
+    position: relative,
     
 }
 
 .h3{
-   top: 260px;
-   left: 100px;
-   position: relative;
+   top: 220px;
+   left: 150px;
+   position: absolute;
+   font-size: 30px;
+}
+
+.footer{
+    height: 100px;
+    background-color:#539dc9 ;
+    
+}
+
+.listanombres{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: space-around;
+}
+
+.nombres{
+display: flex;
+flex-wrap: wrap;
+padding-top: 40px;
+}
+
+.Titulopeliculas{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 570px;
+    left: 150px;
+    z-index: 1;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cajaPeliculas{
+    display: flex; 
+    justify-content: space-around; 
+    width: 100%; 
+    background-color: black;
+    padding: 0px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    position: relative;
+
+}
+
+.Pelicula{
+    background-color: #4e5f64;
+    padding: 10px;
+}
+
+.cars{
+    width: 200px;
+    height: 281.797px;
+}
+
+.toystory{
+    width: 200px;
+    height: 281.797px;
+
+}
+
+.indiana{
+    width: 200px;
+    height: 281.797px;
+
+}
+
+.elrobo{
+    width: 200px;
+    height: 281.797px;
+
 }
