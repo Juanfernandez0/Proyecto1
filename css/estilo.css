@@ -1,85 +1,92 @@
-.index{
+.index {
     background-color: #04001d;
     padding-left: 5%;
     padding-right: 5%;
 
 }
 
-.header{
-    background-color:#539dc9;
+.header {
+    background-color: #539dc9;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    height:65px ;
-    padding-right: 5px;
-    justify-content: space-around;
+    height: 65px;
+    padding-right: 0px;
+    justify-content: space-between;
     width: 100%;
-    padding-left: 5px;
+    padding-left: 0px;
 }
 
-.logo{
+.logo {
     display: flex;
     flex-wrap: wrap;
     width: 120px;
     flex-direction: row;
     padding-left: 0px;
     padding-top: 5px;
+    align-items: baseline;
 
 }
 
-.listahija{
+.listahija {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     padding-left: 20px;
     padding-right: 28px;
     font-size: 30px;
+    text-decoration: none;
 }
 
-.listaprincipal{
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-list-style: none;
-font-family: Arial, Helvetica, sans-serif;
-font-style: italic;
-padding-left: 100px;
+.listaprincipal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.sectionlistaprincipal {
+    padding-right: 370px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
 }
 
-.sectionlistaprincipal{
-    padding-right: 400px;
-    max-width: 100%;
-}
-
-.sectionbanner{
-    margin-top:20px;
+.sectionbanner {
+    margin-top: 20px;
     background-color: #92c5e2;
-   
+
 }
 
-.banner{
-    width: 1150px ;
+.banner {
+    width: 1150px;
     height: 400px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 20px;
     padding-top: 20px;
     position: relative,
-    
+
 }
 
-.h3{
-   top: 220px;
-   left: 150px;
-   position: absolute;
-   font-size: 30px;
+.h3 {
+    top: 220px;
+    left: 150px;
+    position: absolute;
+    font-size: 30px;
 }
 
-.footer{
+.footer {
     height: 100px;
-    background-color:#539dc9 ;
-    
+    background-color: #539dc9;
+
 }
 
-.listanombres{
+.listanombres {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -89,26 +96,26 @@ padding-left: 100px;
     justify-content: space-around;
 }
 
-.nombres{
-display: flex;
-flex-wrap: wrap;
-padding-top: 40px;
+.nombres {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
 }
 
-.Titulopeliculas{
+.Peliculasmasvistas {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    top: 570px;
-    left: 150px;
+    bottom: 390px;
     z-index: 1;
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.cajaPeliculas{
-    display: flex; 
-    justify-content: space-around; 
-    width: 100%; 
+
+.cajaPeliculas {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
     background-color: black;
     padding: 0px;
     padding-top: 90px;
@@ -117,30 +124,50 @@ padding-top: 40px;
 
 }
 
-.Pelicula{
+.Pelicula {
     background-color: #4e5f64;
     padding: 10px;
 }
 
-.cars{
+.cars {
     width: 200px;
     height: 281.797px;
 }
 
-.toystory{
-    width: 200px;
-    height: 281.797px;
-
-}
-
-.indiana{
+.toystory {
     width: 200px;
     height: 281.797px;
 
 }
 
-.elrobo{
+.indiana {
     width: 200px;
     height: 281.797px;
+
+}
+
+.elrobo {
+    width: 200px;
+    height: 281.797px;
+
+}
+
+.titulospelicula {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.seriesmasvistas {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 390px;
+    z-index: 1;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
