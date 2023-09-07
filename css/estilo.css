@@ -159,15 +159,128 @@
     margin-top: 20px;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
 }
 
 .seriesmasvistas {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    bottom: 390px;
+    bottom: 430px;
     z-index: 1;
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
+
+.bannerprincipal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 10px solid #0f2831;
+    width:1180px;
+    position: absolute  
+}
+
+.peliculaespecifica{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 450px;
+    top: 43px;
+    left: 50px;
+    border: 5px solid #797777 ;
+
+}
+
+.tituloprincipal{
+    position: absolute;
+    left: 495px;
+    bottom: 370px;
+    font-size: 40px;
+    background-color: rgba(128, 128, 128, 0.24);
+    padding-right: 660px;
+
+}
+
+.slogan{
+    background-color: rgba(128, 128, 128, 0.24);
+    padding-right: 456px;
+    position: absolute;
+    left: 495px;
+    bottom: 150px;
+    font-style: italic;
+
+}
+
+.divtitulo{
+    background-color: gray;
+}
+
+.datospelicula{
+        display: flex;
+        flex-wrap:wrap ;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #4e5f64;
+        padding-top: 60px;
+        margin-top: 10px;
+        max-width: 1200px;
+
+}
+
+.listadatos{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    text-align: left;
+    flex-direction: column;
+    list-style: none;
+
+    
+    
+}
+
+.fechadeestreno{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    text-align: right;
+    padding-left: 850px;
+    list-style: none;
+}
+
+.descripcionpelicula{
+    padding-left: 40px;
+
+}
+
+.divdeagregar{
+    background-color: #4e5f64;
+    max-width: 1200px;
+
+}
+
+.listadeagregar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 20px;
+ }
+
+ .listashijasdeagregado{
+    background-color: #797777;
+    border: 3px solid #0a0a0a;
+    text-decoration: none;
+ }
+
+ .conteinermain{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+
+ }
+
+ 
