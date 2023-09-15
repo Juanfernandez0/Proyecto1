@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=git, initial-scale=1.0">
+    <title>Ti</title>
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
+
 <body class="index">
-   <div class="divheader2">
+    
+    <div class="divheader2">
         <header class="header1">
+
+        <ul class="prueba1">
+        <li><div>
             <img src="./img/logodg2.png"  class="logo2">
-            <ul class="listaheaderprincipal">
-                <li class="listahijaheader1"><a href="./index.html" class="botonhome" style="color: rgb(0, 0, 0);"  target="_blank">Home</a></li>
-                <li class="listahijaheader2">Buscar</li>
-                <li class="listahijaheader3">Form</li>
+        </div></li>
+        
+        <ul class="listaheaderbotones">
+            <ul class="buscador">
+                <form action="busqueda.html" target="_blank" method="GET">
+                    <div class="divbuscador">
+                        <label for="Busqueda">Busque su Pelicula o Serie:</label>
+                        <input type="text" name="busqueda">
+                    </div>
+                </form>
             </ul>
+
+            <ul class="listahijaheader1"><a href="./index.html" class="botonhome" style="color: rgb(0, 0, 0);"  target="_blank">Home</a></ul>
+
+            <ul class="listahijaheader3"> 
+                <a href="./generos.html"  class="botonhome" style="color: rgb(0, 0, 0);"  target="_blank">Generos</a>
+            </ul>
+
+            <ul class="listahijaheader3"> 
+                <a href="./favorito.html"  class="botonhome" style="color: rgb(0, 0, 0);"  target="_blank">Favoritos</a>
+            </ul>
+        </ul>
+        </ul>
         </header>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
+
+    
     <div class="conteinermain">
      <main class="mainpelicula">
     
-    <div>
-        <div class="bannerprincipal">
-            <img src="./img/bannerprincipal.jpg" class="bannerprincipal" alt="">
-        </div>
-
-        <div>
-            <img src="./img/Peli1.jpg" class="peliculaespecifica" alt="">
-        </div>
-
-        <div class="divtitulo">
-        <h2 class="tituloprincipal" style="color: aliceblue;">Cars I</h2  >
-            <h3 class="slogan" style="color: aliceblue;" >"Volar cual cohete, atacar como bólido"</h3> 
-        </div>
+    <div class="bannerprincipal">
+        <ul class="listapelicula">
+        <li><img src="./img/Peli1.jpg" class="cartelerapeliespecifica" alt=""></li>
+        <ul class="listatexto">
+            <li><h2 class="titulopeliculaespecifica" style="color: aliceblue;">Cars I</h2> </li>
+            <li><h3 class="subtitulopeliculaespecifica" style="color: aliceblue;">Volar cual coehete, atacar como bolido</h3></li>
+        </ul>
+    </ul>
     </div>
 
     <div class="datospelicula">
         <ul class="listadatos">
-            <li>Valoracion</li>
-            <li>Duracion</li>
-            <li>Generos</li>
+            <ul class="listadatosgrandes">
+                <li class="especificaciones">Valoracion: Al 87% le gusto esta pelicula</li>
+                <li class="especificaciones">Duracion: 1 Hora y 57 minutos</li>
+                <li class="especificaciones">Generos : <a href="./generoespecificos.html" style="color: aliceblue;" class="botongeneros"> Animada</a></li>
+            </ul>
+           <li class="fechadeestreno">Fecha de estreno: 6 de junio de 2006
+        </li>
         </ul>
-        <p class="fechadeestreno">Fecha de estreno</p>
-
             <p class="descripcionpelicula">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam praesentium enim adipisci totam quam atque minus a soluta aperiam. A nulla voluptatibus omnis voluptas, fuga suscipit. Iste, odit autem! Repellat, ea expedita quam atque cum, ullam molestiae doloremque dolore quod debitis illo architecto sed nostrum reprehenderit repellendus amet delectus. Modi facere in dicta consequatur unde voluptas soluta, quod earum cum esse possimus quidem commodi fuga ratione saepe dolorum temporibus fugit dolores rerum hic eius iure, blanditiis adipisci accusamus! Ratione voluptate ad inventore, maxime voluptates amet neque eveniet beatae commodi doloribus quos, expedita a aliquid? Quas dolores quam ad atque animi deleniti reiciendis. Facere eius repudiandae sit reiciendis est quibusdam ipsa, molestiae aliquam harum error incidunt delectus libero, molestias magni? Nemo. </p>
-            <br>
-            <br>
-            <br>
+           
 
 
     </div>
@@ -59,7 +76,7 @@
     <div class="divdeagregar">
     <ul class="listadeagregar">
         <li class="listashijasdeagregado"> Agregar a favoritas ♡ </li>
-        <a href="./favorito.html" style="color: black;" target="_blank"> <li class="listashijasdeagregado"> Ver favoritas ♡ </li> </a>
+        <a href="./favorito.html" style="color: black;" target="_blank" class="botonfavoritas"> <li class="listashijasdeagregado"> Ver favoritas ♡ </li> </a>
     </ul>
 
     </div>
@@ -67,14 +84,10 @@
     </main>
 </div> 
 
-<br>
-<br>
-<br>
 
 <footer class="footer">
     <ul class="listanombres">
         <li class="nombres">Juan Fernandez</li>
-        <li class="nombres">Santos Macini</li>
     </ul>
 </footer>
 </body>
