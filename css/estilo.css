@@ -4,15 +4,12 @@
     padding-right: 5%;
     margin-top: 0px;
     margin-bottom: 0px;
-    @media (max-width: 390px ) {
-    padding: 0px;
-    }
-    
+
 }
 
 
 
-.divheader2{
+.divheader2 {
     display: flex;
     flex-wrap: wrap;
     background-color: #5a96b979;
@@ -23,58 +20,41 @@
     border-radius: 10px;
 }
 
-.header1{
+.header1 {
     display: flex;
-    max-width: 1200px;    
+    max-width: 1200px;
     width: 1150px;
-    @media (max-width: 390px ) {
-    width: 385px;
-    height: 300px;
-    }
+
 }
-.prueba1{
+
+
+.prueba1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     list-style: none;
     padding-left: 0px;
-    @media (max-width: 390px) {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        list-style: none;
-        padding-left: 0px;
-        align-items: center;
-        justify-content: space-between;
-        width: 366px;
-    }
+
 }
 
-.logo2{
+.logo2 {
     height: 65px;
     padding-right: 10px;
     border-right: 3px solid rgb(252, 251, 251);
-    @media (max-width: 390px ) {
-    height: 40px;
-    text-align: center;
-    justify-content: center ;
-    border: none;
-    padding-right: 0px;}
 
 }
 
-.listaheaderprincinpal{
+.listaheaderprincinpal {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     list-style: none;
-    @media (max-width: 390px){
-    }    
+
 
 }
 
 
-.listaheaderbotones{
+.listaheaderbotones {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -82,103 +62,65 @@
     padding-left: 0px;
     align-items: center;
     width: 831px;
-    @media (max-width: 390px){
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 0px;
-        height: 150px;
-        width: 300px;
-
-    }
-
-}    
 
 
-.listahijaheader1{
+}
+
+
+.listahijaheader1 {
     display: flex;
     flex-wrap: wrap;
     text-align: left;
     font-size: 30px;
     align-items: end;
-    @media(max-width :390px){
-        padding-left: 0px;
-    }
 }
 
-.divbuscador{
+.divbuscador {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    @media (max-width:390px) {
-        display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 
-        
-    }
 
 }
 
-.buscador{
+.buscador {
     list-style: none;
     margin-top: 6px;
     font-size: 15px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    @media(max-width :390px){
-        padding-left: 0px;
-        align-items: center;
-    }
+
 }
 
-.botonhome{
-    text-decoration: none;    
+.botonhome {
+    text-decoration: none;
 }
 
 
-.listahijaheader3{
+.listahijaheader3 {
     display: flex;
     flex-wrap: wrap;
     text-align: right;
     font-size: 30px;
-    @media(max-width :390px){
-        padding-left: 0px;
-    }
+
 }
 
-.banner {
-    width: 1190px;
-    height: 400px;
-    margin-top: 50px;
-    border: 5px solid #539dc9;
-    @media (max-width: 390px){
-        width: 0px;
-        border: 0px;
-    }
-}
 
-.sectionbanner{
+.sectionbanner {
     background-image: url(../img/banner.jpeg);
     width: 1190px;
     height: 400px;
     margin-top: 50px;
     border: 5px solid #539dc9;
-    @media (max-width: 390px){
-        width: 0px;
-        height: 0px;
-    }
+
 }
 
 .h3 {
     margin-left: 50px;
     margin-top: 100px;
     font-size: 30px;
-    @media (max-width: 390px ) {
-    font-size: 0px;}
+
 }
 
 .footer {
@@ -214,10 +156,8 @@
     align-items: center;
 }
 
-.mainindex{
-    @media (max-width: 390px){
-     width: 366px; 
-    }
+.mainindex {
+    
 }
 
 
@@ -231,62 +171,36 @@
     align-items: top;
     height: 500px;
     background-color: #353a5c;
-    @media (max-width:390px) {
-        height: 1900px;
-        justify-content: center;
-        width: 366px;
 
-
-
-        
-    }
 }
 
-.carteleragrande{
+.carteleragrande {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     list-style: none;
     padding-left: 20px;
-    @media (max-width: 390px) {
-        padding-left: 0px;
-        align-items: center;
-        justify-content: space-between;
-        
-        
-    }
 
 }
 
-.subtitulosindex{
+.subtitulosindex {
     font-size: 30px;
-    @media (max-width: 390px) {
-        text-align: center;
-        
-    }
+
 }
 
-.carteleraindex{
+.carteleraindex {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    z-index: 1 ;
+    z-index: 1;
     padding-left: 0px;
     justify-content: center;
     align-items: center;
-    @media (max-width:390px) {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        width: 366px;
-        
-    }
+
 
 }
 
-.pelicula3{
+.pelicula3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -299,27 +213,16 @@
     border: 2px solid #006b9c;
     margin-left: 20x;
     margin-right: 20px;
-    @media (max-width: 390px) {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        list-style: none;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-        width: 200px;
 
-        
-    }
 }
 
-.portada{
+.portada {
     width: 170px;
     height: 239.52px;
     z-index: 2;
 }
 
-.titulopelicula{
+.titulopelicula {
     text-decoration: none;
 }
 
@@ -337,15 +240,16 @@
     align-items: center;
     margin-top: 75px;
     background-position: center;
+
     @media (max-width: 390px) {
         border: 5px solid #0f2831;
         width: 364px;
-        
+
     }
 }
 
 
-.cartelerapeliespecifica{
+.cartelerapeliespecifica {
     display: flex;
     flex-wrap: wrap;
     height: 350px;
@@ -353,7 +257,8 @@
     margin: 50px;
     justify-content: left;
 }
-.listapelicula{
+
+.listapelicula {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -361,13 +266,9 @@
     justify-content: left;
     padding-left: 0px;
     width: 1180px;
-    @media (max-width: 390px) {
-        width: 364px;
-        
-    }
 }
 
-.listatexto{
+.listatexto {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -378,15 +279,18 @@
     list-style: none;
 
 }
-.titulopeliculaespecifica{
+
+.titulopeliculaespecifica {
     font-size: 40px;
 
 }
 
-.subtitulopeliculaespecifica{
+.subtitulopeliculaespecifica {
     font-size: 30px;
+
     @media (max-width: 390px) {
-    margin-top: 70px;}
+        margin-top: 70px;
+    }
 }
 
 .datospelicula {
@@ -398,20 +302,21 @@
     padding-top: 30px;
     margin-top: 10px;
     max-width: 1200px;
+
     @media (max-width: 390px) {
-    flex-direction: column;
+        flex-direction: column;
     }
 
 }
 
-.botongeneros{
+.botongeneros {
     padding: 5px;
     border-radius: 2px;
     background-color: #04001d;
     text-decoration: none;
 }
 
-.especificaciones{
+.especificaciones {
     margin-bottom: 10px;
 
 }
@@ -424,13 +329,14 @@
     justify-content: center;
     flex-direction: row;
     list-style: none;
+
     @media (max-width: 390px) {
         padding-left: 10px;
-        
+
     }
 }
 
-.listadatosgrandes{
+.listadatosgrandes {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -447,9 +353,10 @@
     padding-left: 0px;
     list-style: none;
     padding-right: 40px;
+
     @media (max-width:390px) {
         padding-right: 10px;
-        
+
     }
 }
 
@@ -481,7 +388,7 @@
     border-radius: 5px;
 }
 
-.botonfavoritas{
+.botonfavoritas {
     text-decoration: none;
 }
 
@@ -503,15 +410,16 @@
 
 /**ARRANCA GENEROS**/
 
-.indexmain{
+.indexmain {
     @media (max-width: 390px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        
+
     }
 }
+
 .bannergeneros {
     display: flex;
     flex-wrap: wrap;
@@ -521,6 +429,7 @@
     height: 400px;
     border: 25px solid #4e5f64;
     border-radius: 20px;
+
     @media (max-width: 390px) {
         width: 0px;
         height: 0px;
@@ -535,9 +444,10 @@
     flex-wrap: wrap;
     font-size: 45px;
     margin-left: 500px;
+
     @media (max-width: 390px) {
-    font-size: 0px;
-}
+        font-size: 0px;
+    }
 }
 
 .listagenerospeliculas {
@@ -551,23 +461,24 @@
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     margin-bottom: 100px;
+
     @media (max-width: 390px) {
         width: 374px;
         padding-bottom: 10px;
-        
+
     }
 }
 
-.peliculasgenero2{
+.peliculasgenero2 {
     display: flex;
     flex-wrap: wrap;
     font-size: 35px;
     padding-bottom: 0px;
 
-    
+
 }
 
-.peliculassubtitulo{
+.peliculassubtitulo {
 
     display: flex;
     flex-wrap: wrap;
@@ -579,13 +490,14 @@
     border-bottom: 5px solid black;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+
     @media (max-width: 390px) {
-    width: 374px;
-    margin-top: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
+        width: 374px;
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
     }
 }
 
@@ -600,7 +512,7 @@
     text-align: center;
     padding: 0px;
     margin: 0px;
-    
+
 
 }
 
@@ -627,7 +539,7 @@
 
 }
 
-.listachicageneros{
+.listachicageneros {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -687,25 +599,26 @@
 .tituloaccion {
     font-size: 40px;
     margin-top: 50px;
+
     @media (max-width: 390px) {
         width: 374px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        
+
     }
 
 }
 
-.mainacccion{
-    @media (max-width: 390px){
+.mainacccion {
+    @media (max-width: 390px) {
         width: 374px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
 
-        
+
     }
 }
 
@@ -716,12 +629,7 @@
     padding-left: 0px;
     background-color: rgb(43, 43, 66);
     padding: 40px;
-    @media (max-width: 390px) {
-        width: 374px;
-        padding: 0px;
 
-        
-    }
 
 
 }
@@ -736,12 +644,13 @@
     text-align: center;
     text-decoration: none;
     margin-bottom: 75px;
+
     @media (max-width: 390px) {
         flex-direction: column;
         justify-content: center;
         text-align: center;
         width: 374px;
-        
+
     }
 
 
@@ -755,11 +664,12 @@
     height: 275px;
 }
 
-.etiquetaAgeneros{
+.etiquetaAgeneros {
     @media (max-width: 390px) {
-width: 374px;
-    }    
+        width: 374px;
+    }
 }
+
 .divpelicula {
     display: flex;
     flex-wrap: wrap;
@@ -771,9 +681,11 @@ width: 374px;
     align-items: center;
     text-decoration: none;
     border: 3px solid #539dc9;
+
     @media (max-width: 390px) {
         width: 334px;
-        padding: 17px;}
+        padding: 17px;
+    }
 
 
 }
@@ -790,37 +702,39 @@ width: 374px;
 
 /**BUSQUEDA**/
 
-.bannerbusqueda{
+.bannerbusqueda {
     background-image: url(../img/busqueda.jpg);
     width: 1190px;
     height: 370px;
     margin-top: 30px;
     border: 5px solid #539dc9;
     background-color: #006b9c;
+
     @media (max-width: 390px) {
-    width: 60pxpx;
-    height: 0px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: 0px;
+        width: 60pxpx;
+        height: 0px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border: 0px;
     }
 
 }
 
-.subtitulobusqueda{
+.subtitulobusqueda {
     font-size: 40px;
     text-align: end;
     padding-right: 45px;
+
     @media (max-width: 390px) {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 25px;
-    color: aliceblue;
-    width: 374px;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 25px;
+        color: aliceblue;
+        width: 374px;
     }
 }
 
-.listabusqueda{
+.listabusqueda {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -829,51 +743,347 @@ width: 374px;
     padding: 25px;
     background-color: #030029;
     border: 3px solid #006b9c;
-    
-    
+
+
 }
 
-.apartadosbusqueda{
+.apartadosbusqueda {
     background-color: #4e5f64;
     font-size: 30px;
     padding-left: 140px;
     padding-right: 140px;
     border-radius: 5px;
+
     @media (max-width: 390px) {
         padding-left: 5px;
         padding-right: 5px;
     }
 }
 
-.textobusqueda{
+.textobusqueda {
     text-decoration: none;
 }
 
-.videobusqueda{
+.videobusqueda {
     width: 1190px;
     border: 5px solid #539dc9;
+
     @media (max-width: 390px) {
-    width: 364px;}
+        width: 364px;
+    }
 }
 
-.gifbusqueda{
+.gifbusqueda {
     padding-bottom: 50px;
 
 }
 
 /**FAVORITOS**/
 
-.carteleragrande2{
+.carteleragrande2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     list-style: none;
     padding-left: 50px;
-    @media (max-width: 390px) {
-    padding-left: 0px;
-    }
 
 
 }
 
-    
+
+
+@media (max-width: 420px) {
+    .carteleragrande2 {
+        padding-left: 0px;
+
+    }
+
+    .index {
+        padding: 0px;
+    }
+
+
+    .header1 {
+        width: 385px;
+        height: 300px;
+    }
+
+    .prueba1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        list-style: none;
+        padding-left: 0px;
+        align-items: center;
+        justify-content: space-between;
+        width: 366px;
+    }
+
+    .logo2 {
+        height: 40px;
+        text-align: center;
+        justify-content: center;
+        border: none;
+        padding-right: 0px;
+    }
+
+    .listaheaderbotones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0px;
+        height: 150px;
+        width: 300px;
+
+    }
+
+
+    .listahijaheader1 {
+        padding-left: 0px;
+    }
+
+
+    .divbuscador {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .buscador {
+        padding-left: 0px;
+        align-items: center;
+    }
+
+    .listahijaheader3 {
+        padding-left: 0px;
+    }
+
+
+    .banner {
+        width: 0px;
+        border: 0px;
+    }
+
+
+    .sectionbanner {
+        width: 0px;
+        height: 0px;
+    }
+
+
+
+    .h3 {
+        font-size: 0px;
+    }
+
+
+
+    .mainindex {
+        width: 366px;
+    }
+
+
+    .cajaPeliculas {
+        height: 1900px;
+        justify-content: center;
+        width: 366px;
+    }
+
+
+
+    .carteleragrande {
+        padding-left: 0px;
+        align-items: center;
+        justify-content: space-between;
+
+
+    }
+
+
+
+    .subtitulosindex {
+        text-align: center;
+    }
+
+
+
+    .carteleraindex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 366px;
+    }
+
+
+
+    .pelicula3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        width: 200px;
+    }
+
+
+    /**ARRANCA PELICULAS o SERIES**/
+
+
+    .bannerprincipal {
+        border: 5px solid #0f2831;
+        width: 364px;
+    }
+
+
+
+    .listapelicula {
+        width: 364px;
+    }
+
+
+    .subtitulopeliculaespecifica {
+        margin-top: 70px;
+    }
+
+    .datospelicula {
+        flex-direction: column;
+    }
+
+
+
+    .listadatos {
+        padding-left: 10px;
+    }
+
+
+
+    .fechadeestreno {
+        padding-right: 10px;
+    }
+
+
+
+    /**ARRANCA GENEROS**/
+
+    .indexmain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .bannergeneros {
+        width: 0px;
+        height: 0px;
+        border: 0px;
+        margin-top: 0px;
+    }
+
+
+    .Generostitulos {
+        font-size: 0px;
+    }
+
+
+    .listagenerospeliculas {
+        width: 374px;
+        padding-bottom: 10px;
+    }
+
+
+    .peliculassubtitulo {
+        width: 374px;
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    /**ARRANCA GENEROPELICULA**/
+
+    .tituloaccion {
+        width: 374px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .mainacccion {
+        width: 374px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+
+
+    }
+
+
+    .accionlistacontenedor {
+        width: 374px;
+        padding: 0px;
+
+    }
+
+
+    .accionfila {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 374px;
+    }
+
+
+    .etiquetaAgeneros {
+        width: 374px;
+    }
+
+
+    .divpelicula {
+        width: 334px;
+        padding: 17px;
+    }
+
+    /**BUSQUEDA**/
+
+
+    .bannerbusqueda {
+        width: 60pxpx;
+        height: 0px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border: 0px;
+    }
+
+    .subtitulobusqueda {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 25px;
+        color: aliceblue;
+        width: 374px;
+    }
+
+
+
+    .apartadosbusqueda {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+
+    .videobusqueda {
+        width: 364px;
+    }
+
+}
