@@ -2,10 +2,15 @@
     background-color: #04001d;
     padding-left: 5%;
     padding-right: 5%;
-
+    margin-top: 0px;
+    margin-bottom: 0px;
+    @media (max-width: 390px ) {
+    padding: 0px;
+    }
+    
 }
 
-/* comentariod de prueba*/
+
 
 .divheader2{
     display: flex;
@@ -14,7 +19,7 @@
     max-width: 100%;
     padding-bottom: 5px;
     padding-top: 5px;
-    border: 4px solid black;
+    border: 4px solid #000000;
     border-radius: 10px;
 }
 
@@ -22,22 +27,71 @@
     display: flex;
     max-width: 1200px;    
     width: 1150px;
+    @media (max-width: 390px ) {
+    width: 385px;
+    height: 300px;
+    }
+}
+.prueba1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0px;
+    @media (max-width: 390px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        list-style: none;
+        padding-left: 0px;
+        align-items: center;
+        justify-content: space-between;
+        width: 366px;
+    }
 }
 
 .logo2{
     height: 65px;
     padding-right: 10px;
     border-right: 3px solid rgb(252, 251, 251);
-
+    @media (max-width: 390px ) {
+    height: 40px;
+    text-align: center;
+    justify-content: center ;
+    border: none;
+    padding-right: 0px;}
 
 }
 
-.listaheaderprincipal{
+.listaheaderprincinpal{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    @media (max-width: 390px){
+    }    
+
+}
+
+
+.listaheaderbotones{
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    width: 1100px;
-    max-width: 1100px;
+    padding-left: 0px;
+    align-items: center;
+    width: 831px;
+    @media (max-width: 390px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0px;
+        height: 150px;
+        width: 300px;
+
+    }
 
 }    
 
@@ -47,41 +101,71 @@
     flex-wrap: wrap;
     text-align: left;
     font-size: 30px;
+    align-items: end;
+    @media(max-width :390px){
+        padding-left: 0px;
+    }
+}
+
+.divbuscador{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @media (max-width:390px) {
+        display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+        
+    }
+
+}
+
+.buscador{
+    list-style: none;
+    margin-top: 6px;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @media(max-width :390px){
+        padding-left: 0px;
+        align-items: center;
+    }
 }
 
 .botonhome{
     text-decoration: none;    
 }
 
-.listahijaheader2{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: right;
-    font-size: 30px;
-}
 
 .listahijaheader3{
     display: flex;
     flex-wrap: wrap;
     text-align: right;
     font-size: 30px;
-}
-
-.sectionbanner {
-    margin-top: 20px;
-    background-color: #92c5e2;
-
+    @media(max-width :390px){
+        padding-left: 0px;
+    }
 }
 
 .banner {
-    width: 1150px;
+    width: 1190px;
     height: 400px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    position: relative,
+    margin-top: 50px;
+    border: 5px solid #539dc9;
+    @media (max-width: 390px){
+        width: 0px;
+        border: 0px;
+    }
+}
 
+.sectionbanner{
+    @media (max-width: 390px){
+        width: 0px;
+        height: 0px;
+    }
 }
 
 .h3 {
@@ -89,11 +173,19 @@
     left: 150px;
     position: absolute;
     font-size: 30px;
+    @media (max-width: 390px ) {
+    font-size: 0px;}
 }
 
 .footer {
+    display: flex;
+    flex-wrap: wrap;
     height: 100px;
     background-color: #539dc9;
+    border: 5px solid #0f2831;
+    justify-content: center;
+    align-items: center;
+
 
 }
 
@@ -105,85 +197,127 @@
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     justify-content: space-around;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
 }
 
 .nombres {
     display: flex;
     flex-wrap: wrap;
     padding-top: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
-.Peliculasmasvistas {
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    bottom: 390px;
-    z-index: 1;
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.mainindex{
+    @media (max-width: 390px){
+     width: 366px; 
+    }
 }
+
+
 
 .cajaPeliculas {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    background-color: rgb(65, 65, 65);
-    padding: 0px;
-    padding-top: 90px;
-    padding-bottom: 40px;
-    position: relative;
-    border: 8px solid #0f2831
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    border: 4px solid #0f2831;
+    margin-top: 120px;
+    align-items: top;
+    height: 500px;
+    background-color: #353a5c;
+    @media (max-width:390px) {
+        height: 1900px;
+        justify-content: center;
+        width: 366px;
 
+
+
+        
+    }
 }
 
-.Pelicula {
-    background-color: #4e5f64;
-    padding: 10px;
-    border: 3px solid #04001d;
-}
-
-.cars {
-    width: 200px;
-    height: 281.797px;
-}
-
-.toystory {
-    width: 200px;
-    height: 281.797px;
-
-}
-
-.indiana {
-    width: 200px;
-    height: 281.797px;
-
-}
-
-.elrobo {
-    width: 200px;
-    height: 281.797px;
-
-}
-
-.titulospelicula {
+.carteleragrande{
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    margin-top: 20px;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
-}
-
-.seriesmasvistas {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     position: absolute;
-    bottom: 430px;
-    z-index: 1;
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style: none;
+    padding-left: 20px;
+    @media (max-width: 390px) {
+        padding-left: 0px;
+        align-items: center;
+        justify-content: space-between;
+        
+        
+    }
 
+}
+
+.subtitulosindex{
+    font-size: 30px;
+    @media (max-width: 390px) {
+        text-align: center;
+        
+    }
+}
+
+.carteleraindex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    z-index: 1 ;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:390px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 366px;
+        
+    }
+
+}
+
+.pelicula3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-bottom: 25px;
+    background-color: #0f2831;
+    border: 2px solid #006b9c;
+    margin-left: 20x;
+    margin-right: 20px;
+    @media (max-width: 390px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        width: 200px;
+
+        
+    }
+}
+
+.portada{
+    width: 170px;
+    height: 239.52px;
+    z-index: 2;
+}
+
+.titulopelicula{
+    text-decoration: none;
 }
 
 
@@ -195,44 +329,61 @@
     justify-content: center;
     border: 10px solid #0f2831;
     width: 1180px;
-    position: absolute
+    background-image: url(../img/bannerprincipal.jpg);
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    background-position: center;
+    @media (max-width: 390px) {
+        border: 5px solid #0f2831;
+        width: 364px;
+        
+    }
 }
 
-.peliculaespecifica {
-    position: relative;
+
+.cartelerapeliespecifica{
     display: flex;
     flex-wrap: wrap;
-    height: 450px;
-    top: 43px;
-    left: 50px;
-    border: 5px solid #797777;
-
+    height: 350px;
+    border: 5px solid #b3b3b3;
+    margin: 50px;
+    justify-content: left;
+}
+.listapelicula{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: top;
+    justify-content: left;
+    padding-left: 0px;
+    width: 1180px;
+    @media (max-width: 390px) {
+        width: 364px;
+        
+    }
 }
 
+.listatexto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: top;
+    justify-content: left;
+    margin-top: 35px;
+    padding-left: 0p;
+    list-style: none;
 
-
-.tituloprincipal {
-    position: absolute;
-    left: 495px;
-    bottom: 330px;
+}
+.titulopeliculaespecifica{
     font-size: 40px;
-    background-color: rgba(128, 128, 128, 0.24);
-    padding-right: 660px;
 
 }
 
-.slogan {
-    background-color: rgba(128, 128, 128, 0.24);
-    padding-right: 456px;
-    position: absolute;
-    left: 495px;
-    bottom: 120px;
-    font-style: italic;
-
-}
-
-.divtitulo {
-    background-color: gray;
+.subtitulopeliculaespecifica{
+    font-size: 30px;
+    @media (max-width: 390px) {
+    margin-top: 70px;}
 }
 
 .datospelicula {
@@ -241,9 +392,24 @@
     justify-content: space-between;
     align-items: center;
     background-color: #4e5f64;
-    padding-top: 60px;
+    padding-top: 30px;
     margin-top: 10px;
     max-width: 1200px;
+    @media (max-width: 390px) {
+    flex-direction: column;
+    }
+
+}
+
+.botongeneros{
+    padding: 5px;
+    border-radius: 2px;
+    background-color: #04001d;
+    text-decoration: none;
+}
+
+.especificaciones{
+    margin-bottom: 10px;
 
 }
 
@@ -252,11 +418,21 @@
     flex-wrap: wrap;
     flex: 1;
     text-align: left;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    @media (max-width: 390px) {
+        padding-left: 10px;
+        
+    }
+}
+
+.listadatosgrandes{
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     list-style: none;
-
-
-
+    padding-left: 0px;
 }
 
 .fechadeestreno {
@@ -264,8 +440,14 @@
     flex-wrap: wrap;
     flex: 1;
     text-align: right;
-    padding-left: 850px;
+    justify-content: right;
+    padding-left: 0px;
     list-style: none;
+    padding-right: 40px;
+    @media (max-width:390px) {
+        padding-right: 10px;
+        
+    }
 }
 
 .descripcionpelicula {
@@ -290,7 +472,13 @@
 
 .listashijasdeagregado {
     background-color: #797777;
-    border: 3px solid #0a0a0a;
+    border: 3px solid #030029;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.botonfavoritas{
     text-decoration: none;
 }
 
@@ -312,15 +500,31 @@
 
 /**ARRANCA GENEROS**/
 
+.indexmain{
+    @media (max-width: 390px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
 .bannergeneros {
     display: flex;
     flex-wrap: wrap;
+    background-image: url(../img/bannergeneros.jpg);
     margin-top: 40px;
     width: 1150px;
     height: 400px;
     border: 25px solid #4e5f64;
     position: relative;
     border-radius: 20px;
+    @media (max-width: 390px) {
+        width: 0px;
+        height: 0px;
+        border: 0px;
+        margin-top: 0px;
+    }
 
 }
 
@@ -328,9 +532,10 @@
     display: flex;
     flex-wrap: wrap;
     font-size: 45px;
-    position: absolute;
-    bottom: 365px;
-    left: 300px;
+    margin-left: 500px;
+    @media (max-width: 390px) {
+    font-size: 0px;
+}
 }
 
 .listagenerospeliculas {
@@ -344,7 +549,11 @@
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     margin-bottom: 100px;
-
+    @media (max-width: 390px) {
+        width: 374px;
+        padding-bottom: 10px;
+        
+    }
 }
 
 .peliculasgenero2{
@@ -368,6 +577,14 @@
     border-bottom: 5px solid black;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    @media (max-width: 390px) {
+    width: 374px;
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    }
 }
 
 
@@ -472,7 +689,26 @@
 .tituloaccion {
     font-size: 40px;
     margin-top: 50px;
+    @media (max-width: 390px) {
+        width: 374px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
 
+}
+
+.mainacccion{
+    @media (max-width: 390px){
+        width: 374px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+
+        
+    }
 }
 
 .accionlistacontenedor {
@@ -482,6 +718,12 @@
     padding-left: 0px;
     background-color: rgb(43, 43, 66);
     padding: 40px;
+    @media (max-width: 390px) {
+        width: 374px;
+        padding: 0px;
+
+        
+    }
 
 
 }
@@ -496,6 +738,13 @@
     text-align: center;
     text-decoration: none;
     margin-bottom: 75px;
+    @media (max-width: 390px) {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 374px;
+        
+    }
 
 
 }
@@ -508,6 +757,11 @@
     height: 275px;
 }
 
+.etiquetaAgeneros{
+    @media (max-width: 390px) {
+width: 374px;
+    }    
+}
 .divpelicula {
     display: flex;
     flex-wrap: wrap;
@@ -519,6 +773,9 @@
     align-items: center;
     text-decoration: none;
     border: 3px solid #539dc9;
+    @media (max-width: 390px) {
+        width: 334px;
+        padding: 17px;}
 
 
 }
@@ -532,3 +789,94 @@
     text-decoration: none;
 
 }
+
+/**BUSQUEDA**/
+
+.bannerbusqueda{
+    background-image: url(../img/busqueda.jpg);
+    width: 1190px;
+    height: 370px;
+    margin-top: 30px;
+    border: 5px solid #539dc9;
+    background-color: #006b9c;
+    @media (max-width: 390px) {
+    width: 60pxpx;
+    height: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 0px;
+    }
+
+}
+
+.subtitulobusqueda{
+    font-size: 40px;
+    text-align: end;
+    padding-right: 45px;
+    @media (max-width: 390px) {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+    color: aliceblue;
+    width: 374px;
+    }
+}
+
+.listabusqueda{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #030029;
+    border: 3px solid #006b9c;
+    
+    
+}
+
+.apartadosbusqueda{
+    background-color: #4e5f64;
+    font-size: 30px;
+    padding-left: 140px;
+    padding-right: 140px;
+    border-radius: 5px;
+    @media (max-width: 390px) {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.textobusqueda{
+    text-decoration: none;
+}
+
+.videobusqueda{
+    width: 1190px;
+    border: 5px solid #539dc9;
+    @media (max-width: 390px) {
+    width: 364px;}
+}
+
+.gifbusqueda{
+    padding-bottom: 50px;
+
+}
+
+/**FAVORITOS**/
+
+.carteleragrande2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    list-style: none;
+    padding-left: 50px;
+    @media (max-width: 390px) {
+    padding-left: 0px;
+    }
+
+
+}
+
+    
