@@ -162,6 +162,11 @@
 }
 
 .sectionbanner{
+    background-image: url(../img/banner.jpeg);
+    width: 1190px;
+    height: 400px;
+    margin-top: 50px;
+    border: 5px solid #539dc9;
     @media (max-width: 390px){
         width: 0px;
         height: 0px;
@@ -169,9 +174,8 @@
 }
 
 .h3 {
-    top: 220px;
-    left: 150px;
-    position: absolute;
+    margin-left: 50px;
+    margin-top: 100px;
     font-size: 30px;
     @media (max-width: 390px ) {
     font-size: 0px;}
@@ -242,7 +246,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    position: absolute;
     list-style: none;
     padding-left: 20px;
     @media (max-width: 390px) {
@@ -517,7 +520,6 @@
     width: 1150px;
     height: 400px;
     border: 25px solid #4e5f64;
-    position: relative;
     border-radius: 20px;
     @media (max-width: 390px) {
         width: 0px;
@@ -660,9 +662,6 @@
     margin-top: 60px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    position: absolute;
-    top: 550px;
-    width: 1200px;
     text-align: center;
     font-size: 30px;
     border-bottom: 3px solid #04001d;
@@ -676,7 +675,6 @@
     margin-top: 60px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    position: absolute;
     top: 1200px;
     width: 1200px;
     text-align: center;
@@ -869,7 +867,6 @@ width: 374px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    position: absolute;
     list-style: none;
     padding-left: 50px;
     @media (max-width: 390px) {
