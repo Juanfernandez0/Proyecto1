@@ -12,176 +12,284 @@
     
     <div class="divheader2">
         <header class="header1">
+
+        <ul class="prueba1">
+        <li><div>
             <img src="./img/logodg2.png"  class="logo2">
-            <ul class="listaheaderprincipal">
-                <li class="listahijaheader1"><a href="./index.html" class="botonhome" style="color: rgb(0, 0, 0);"  target="_blank">Home</a></li>
-                <li class="listahijaheader2">Buscar</li>
-                <li class="listahijaheader3">Form</li>
+        </div></li>
+        
+        <ul class="listaheaderbotones">
+            <ul class="buscador">
+                <form action="busqueda.html" target="_blank" method="GET">
+                    <div class="divbuscador">
+                        <label for="Busqueda">Busque su Pelicula o Serie:</label>
+                        <input type="text" name="busqueda">
+                    </div>
+                </form>
             </ul>
+
+            <ul class="listahijaheader1"><a href="./index.html" class="botonhome" style="color: rgb(0, 0, 0);"  target="_blank">Home</a></ul>
+
+            <ul class="listahijaheader3"> 
+                <a href="./generos.html"  class="botonhome" style="color: rgb(0, 0, 0);"  target="_blank">Generos</a>
+            </ul>
+
+            <ul class="listahijaheader3"> 
+                <a href="./favorito.html"  class="botonhome" style="color: rgb(0, 0, 0);"  target="_blank">Favoritos</a>
+            </ul>
+        </ul>
+        </ul>
         </header>
     </div>
     
-    <main>
+    <main class="mainindex">
         <section class="sectionbanner">
             <h3 class="h3" style="color: rgb(233, 246, 255);">Series y Peliculas</h3>
             <img src="./img/banner.jpeg" class="banner" alt="">
         </section>
-        <br>
-        <br>
+
 
         <div class="cajaPeliculas">
-            <p class="seriesmasvistas" style="color: rgb(2, 2, 2);">Peliculas Populares</p>
+            <ul class="carteleragrande">
 
-            <div class="Pelicula">
-                <img src="./img/Peli1.jpg" class="cars" alt="">
-                <a href="./pelicula.html" style="color: white;" target="_blank" class="titulospelicula">Cars I</a>
-                <p class="titulospelicula">Fecha de Lanzamiento</p>
+                <li><h2 class="subtitulosindex" style="color: aliceblue;">Peliculas mas vistas</h2></li>
+                <ul class="carteleraindex">
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli1.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Cars I</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno : 6/6/2005</a></li>
+                    </ul>
 
-            </div>
-            <div class="Pelicula">
-                <img src="./img/Peli2.jpg" class="toystory" alt="">
-                <a href="./pelicula.html" style="color: white;" target="_blank" class="titulospelicula"> Toy Story</a>
-                <p class="titulospelicula">Fecha de Lanzamiento</p>
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli5.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Whiplash</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 16/2/2014</a></li>
+                    </ul>
 
-            </div>
-            <div class="Pelicula">
-                <img src="./img/Peli3.jpg" class="indiana" alt="">
-                <a href="./pelicula.html" style="color: white;" target="_blank" class="titulospelicula">Indiana Jones II</a>
-                <p class="titulospelicula">Fecha de Lanzamiento</p>
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli2.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Toy Story I</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 14/3/1996 </a></li>
+                    </ul>
 
-            </div>
-            <div class="Pelicula">
-                <img src="./img/Peli4.jpg" class="elrobo" alt="">
-                <a href="./pelicula.html" style="color: white;" target="_blank" class="titulospelicula">Robo del Siglo</a>
-                <p class="titulospelicula">Fecha de Lanzamiento</p>
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli3.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Indiana Jones</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 8/5/1984</a></li>
+                    </ul>
 
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="cajaPeliculas">
-            <p class="seriesmasvistas" style="color: rgb(5, 5, 5);">Series Populares</p>
-
-            <div class="Pelicula">
-                <img src="./img/Peli1.jpg" class="cars" alt="">
-                <a href="./series.html" style="color: white;" target="_blank" class="titulospelicula">Cars I</a>
-                <p class="titulospelicula">Fecha de Lanzamiento</p>
-
-            </div>
-            <div class="Pelicula">
-                <img src="./img/Peli2.jpg" class="toystory" alt="">
-                <a href="./series.html" style="color: white;" target="_blank" class="titulospelicula"> Toy Story</a>
-                <p class="titulospelicula">Fecha de Lanzamiento</p>
-
-            </div>
-            <div class="Pelicula">
-                <img src="./img/Peli3.jpg" class="indiana" alt="">
-                <a href="./series.html" style="color: white;" target="_blank" class="titulospelicula">Indiana Jones II</a>
-                <p class="titulospelicula">Fecha de Lanzamiento</p>
-
-            </div>
-            <div class="Pelicula">
-                <img src="./img/Peli4.jpg" class="elrobo" alt="">
-                <a href="./series.html" style="color: white;" target="_blank" class="titulospelicula">Robo del Siglo</a>
-                <p class="titulospelicula">Fecha de Lanzamiento</p>
-
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-
-        <div class="cajaPeliculas">
-            <p class="seriesmasvistas" style="color: rgb(10, 10, 10);">Lo mas visto en Series</p>
-
-            <div class="Pelicula">
-                <img src="./img/Peli1.jpg" class="cars" alt="">
-                <p class="titulospelicula">Cars I</p>
-                <p class="titulospelicula">Fecha de Lanzamiento</p>
-
-            </div>
-            <div class="Pelicula">
-                <img src="./img/Peli2.jpg" class="toystory" alt="">
-                <p class="titulospelicula">Toy Story II</p>
-                <p class="titulospelicula">Fecha de Lanzamiento</p>
-
-            </div>
-            <div class="Pelicula">
-                <img src="./img/Peli3.jpg" class="indiana" alt="">
-                <p class="titulospelicula">Indiana Jones II</p>
-                <p class="titulospelicula">Fecha de Lanzamiento</p>
-
-            </div>
-            <div class="Pelicula">
-                <img src="./img/Peli4.jpg" class="elrobo" alt="">
-                <p class="titulospelicula">El Robo del Siglo</p>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-
-        <div class="cajaPeliculas">
-            <p class="seriesmasvistas" style="color: rgb(10, 10, 10);">Lo mas visto en Peliculas</p>
-
-            <div class="Pelicula">
-                <img src="./img/Peli1.jpg" class="cars" alt="">
-                <p class="titulospelicula">Cars I</p>
-            </div>
-            <div class="Pelicula">
-                <img src="./img/Peli2.jpg" class="toystory" alt="">
-                <p class="titulospelicula">Toy Story II</p>
-            </div>
-            <div class="Pelicula">
-                <img src="./img/Peli3.jpg" class="indiana" alt="">
-                <p class="titulospelicula">Indiana Jones II</p>
-            </div>
-            <div class="Pelicula">
-                <img src="./img/Peli4.jpg" class="elrobo" alt="">
-                <p class="titulospelicula">El Robo del Siglo</p>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="cajaPeliculas">
-            <p class="seriesmasvistas" style="color: rgb(7, 7, 7);">Series mas valorads </p>
-
-            <div class="Pelicula">
-                <img src="./img/Peli1.jpg" class="cars" alt="">
-                <p class="titulospelicula">Cars I</p>
-            </div>
-            <div class="Pelicula">
-                <img src="./img/Peli2.jpg" class="toystory" alt="">
-                <p class="titulospelicula">Toy Story II</p>
-            </div>
-            <div class="Pelicula">
-                <img src="./img/Peli3.jpg" class="indiana" alt="">
-                <p class="titulospelicula">Indiana Jones II</p>
-            </div>
-            <div class="Pelicula">
-                <img src="./img/Peli4.jpg" class="elrobo" alt="">
-                <p class="titulospelicula">El Robo del Siglo</p>
-            </div>
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli4.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">EL Robo del Siglo</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 16/1/2020</a></li>
+                    </ul>
+                </ul>
+            </ul>
         </div>
 
 
+        
+        <div class="cajaPeliculas">
+            <ul class="carteleragrande">
 
+                <li><h2 class="subtitulosindex" style="color: aliceblue;">Series mas vistas</h2></li>
+                <ul class="carteleraindex">
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli1.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Cars I</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno : 6/6/2005</a></li>
+                    </ul>
 
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli5.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Whiplash</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 16/2/2014</a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli2.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Toy Story I</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 14/3/1996 </a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli3.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Indiana Jones</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 8/5/1984</a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli4.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">EL Robo del Siglo</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 16/1/2020</a></li>
+                    </ul>
+                </ul>
+            </ul>
+        </div>
+
+        
+        <div class="cajaPeliculas">
+            <ul class="carteleragrande">
+
+                <li><h2 class="subtitulosindex" style="color: aliceblue;">Peliculas del momento/h2></li>
+                <ul class="carteleraindex">
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli1.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Cars I</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno : 6/6/2005</a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli5.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Whiplash</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 16/2/2014</a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli2.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Toy Story I</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 14/3/1996 </a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli3.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Indiana Jones</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 8/5/1984</a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli4.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">EL Robo del Siglo</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 16/1/2020</a></li>
+                    </ul>
+                </ul>
+            </ul>
+        </div>
+        
+        <div class="cajaPeliculas">
+            <ul class="carteleragrande">
+
+                <li><h2 class="subtitulosindex" style="color: aliceblue;">Series del momento</h2></li>
+                <ul class="carteleraindex">
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli1.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Cars I</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno : 6/6/2005</a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli5.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Whiplash</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 16/2/2014</a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli2.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Toy Story I</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 14/3/1996 </a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli3.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Indiana Jones</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 8/5/1984</a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli4.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">EL Robo del Siglo</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 16/1/2020</a></li>
+                    </ul>
+                </ul>
+            </ul>
+        </div>
+
+        
+        <div class="cajaPeliculas">
+      
+            <ul class="carteleragrande">
+
+                <li><h2 class="subtitulosindex" style="color: aliceblue;">Series mejor valoradas</h2></li>
+                <ul class="carteleraindex">
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli1.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Cars I</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno : 6/6/2005</a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli5.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Whiplash</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 16/2/2014</a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli2.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Toy Story I</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 14/3/1996 </a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli3.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Indiana Jones</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 8/5/1984</a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli4.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">EL Robo del Siglo</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 16/1/2020</a></li>
+                    </ul>
+                </ul>
+            </ul>
+        </div>
+
+        
+        <div class="cajaPeliculas">
+            <ul class="carteleragrande">
+
+                <li><h2 class="subtitulosindex" style="color: aliceblue;">Peliculas mejor valoradas</h2></li>
+                <ul class="carteleraindex">
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli1.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Cars I</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno : 6/6/2005</a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli5.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Whiplash</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 16/2/2014</a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli2.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Toy Story I</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 14/3/1996 </a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli3.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Indiana Jones</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 8/5/1984</a></li>
+                    </ul>
+
+                    <ul class="pelicula3">
+                        <li><img src="./img/Peli4.jpg" class="portada"></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">EL Robo del Siglo</a></li>
+                        <li><a href="./pelicula.html" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno: 16/1/2020</a></li>
+                    </ul>
+                </ul>
+            </ul>
+        </div>
 
 
     </main>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    
 
     <footer class="footer">
         <ul class="listanombres">
             <li class="nombres">Juan Fernandez</li>
-            <li class="nombres">Santos Macini</li>
         </ul>
     </footer>
 </body>
