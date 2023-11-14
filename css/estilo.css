@@ -178,7 +178,6 @@
     flex-direction: column;
     list-style: none;
     padding-left: 20px;
-
 }
 
 .subtitulosindex {
@@ -190,7 +189,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    z-index: 1;
     padding-left: 0px;
     justify-content: center;
     align-items: center;
@@ -199,29 +197,31 @@
 }
 
 .pelicula3 {
+    width: 195px;
+    height: 345px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     list-style: none;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    justify-content: space-between;
+    padding: 10px;
     padding-bottom: 25px;
     background-color: #0f2831;
     border: 2px solid #006b9c;
-    margin-left: 20x;
-    margin-right: 20px;
+    margin-right: 15px;
 
 }
 
 .portada {
     width: 170px;
-    height: 239.52px;
+    height: 230px;
     z-index: 2;
 }
 
 .titulopelicula {
     text-decoration: none;
+    
 }
 
 
@@ -239,11 +239,6 @@
     margin-top: 75px;
     background-position: center;
 
-    @media (max-width: 390px) {
-        border: 5px solid #0f2831;
-        width: 364px;
-
-    }
 }
 
 
@@ -279,16 +274,13 @@
 }
 
 .titulopeliculaespecifica {
-    font-size: 40px;
+    font-size: 30px;
 
 }
 
 .subtitulopeliculaespecifica {
     font-size: 30px;
 
-    @media (max-width: 390px) {
-        margin-top: 70px;
-    }
 }
 
 .datospelicula {
@@ -301,9 +293,6 @@
     margin-top: 10px;
     max-width: 1200px;
 
-    @media (max-width: 390px) {
-        flex-direction: column;
-    }
 
 }
 
@@ -312,12 +301,16 @@
     border-radius: 2px;
     background-color: #04001d;
     text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .especificaciones {
     margin-bottom: 10px;
 
 }
+
+
 
 .listadatos {
     display: flex;
@@ -328,12 +321,8 @@
     flex-direction: row;
     list-style: none;
 
-    @media (max-width: 390px) {
-        padding-left: 10px;
 
     }
-}
-
 .listadatosgrandes {
     display: flex;
     flex-wrap: wrap;
@@ -346,20 +335,16 @@
     display: flex;
     flex-wrap: wrap;
     flex: 1;
-    text-align: right;
-    justify-content: right;
+    text-align: left;
+    justify-content: left;
     padding-left: 0px;
     list-style: none;
     padding-right: 40px;
 
-    @media (max-width:390px) {
-        padding-right: 10px;
-
-    }
 }
 
 .descripcionpelicula {
-    padding-left: 40px;
+    padding-left: 0px;
 
 }
 
@@ -409,13 +394,7 @@
 /**ARRANCA GENEROS**/
 
 .indexmain {
-    @media (max-width: 390px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
 
-    }
 }
 
 .bannergeneros {
@@ -428,13 +407,6 @@
     border: 25px solid #4e5f64;
     border-radius: 20px;
 
-    @media (max-width: 390px) {
-        width: 0px;
-        height: 0px;
-        border: 0px;
-        margin-top: 0px;
-    }
-
 }
 
 .Generostitulos {
@@ -443,9 +415,6 @@
     font-size: 45px;
     margin-left: 500px;
 
-    @media (max-width: 390px) {
-        font-size: 0px;
-    }
 }
 
 .listagenerospeliculas {
@@ -460,11 +429,6 @@
     border-bottom-right-radius: 15px;
     margin-bottom: 100px;
 
-    @media (max-width: 390px) {
-        width: 374px;
-        padding-bottom: 10px;
-
-    }
 }
 
 .peliculasgenero2 {
@@ -489,14 +453,6 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 
-    @media (max-width: 390px) {
-        width: 374px;
-        margin-top: 0px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 20px;
-    }
 }
 
 
@@ -598,26 +554,11 @@
     font-size: 40px;
     margin-top: 50px;
 
-    @media (max-width: 390px) {
-        width: 374px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-    }
 
 }
 
 .mainacccion {
-    @media (max-width: 390px) {
-        width: 374px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
 
-
-    }
 }
 
 .accionlistacontenedor {
@@ -643,14 +584,6 @@
     text-decoration: none;
     margin-bottom: 75px;
 
-    @media (max-width: 390px) {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        width: 374px;
-
-    }
-
 
 }
 
@@ -663,9 +596,7 @@
 }
 
 .etiquetaAgeneros {
-    @media (max-width: 390px) {
-        width: 374px;
-    }
+
 }
 
 .divpelicula {
@@ -679,11 +610,6 @@
     align-items: center;
     text-decoration: none;
     border: 3px solid #539dc9;
-
-    @media (max-width: 390px) {
-        width: 334px;
-        padding: 17px;
-    }
 
 
 }
@@ -708,13 +634,6 @@
     border: 5px solid #539dc9;
     background-color: #006b9c;
 
-    @media (max-width: 390px) {
-        width: 60pxpx;
-        height: 0px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        border: 0px;
-    }
 
 }
 
@@ -723,13 +642,6 @@
     text-align: end;
     padding-right: 45px;
 
-    @media (max-width: 390px) {
-        text-align: center;
-        margin-top: 40px;
-        font-size: 25px;
-        color: aliceblue;
-        width: 374px;
-    }
 }
 
 .listabusqueda {
@@ -752,10 +664,6 @@
     padding-right: 140px;
     border-radius: 5px;
 
-    @media (max-width: 390px) {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
 }
 
 .textobusqueda {
@@ -766,9 +674,6 @@
     width: 1190px;
     border: 5px solid #539dc9;
 
-    @media (max-width: 390px) {
-        width: 364px;
-    }
 }
 
 .gifbusqueda {
@@ -910,25 +815,17 @@
 
 
     .carteleraindex {
-        display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
         width: 366px;
     }
 
 
 
     .pelicula3 {
-        display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        list-style: none;
-        justify-content: center;
-        align-items: center;
         margin-bottom: 30px;
         width: 200px;
+        margin-right: 0px;
     }
 
 
