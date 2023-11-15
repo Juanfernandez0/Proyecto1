@@ -268,18 +268,20 @@
     align-items: top;
     justify-content: left;
     margin-top: 35px;
-    padding-left: 0p;
+    padding-left: 0px;
     list-style: none;
 
 }
 
 .titulopeliculaespecifica {
-    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 29px;
 
 }
 
 .subtitulopeliculaespecifica {
-    font-size: 30px;
+    font-size: 20px;
 
 }
 
@@ -307,7 +309,10 @@
 
 .especificaciones {
     margin-bottom: 10px;
-
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: left;
 }
 
 
@@ -317,7 +322,7 @@
     flex-wrap: wrap;
     flex: 1;
     text-align: left;
-    justify-content: center;
+    justify-content: left;
     flex-direction: row;
     list-style: none;
 
@@ -327,6 +332,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    text-align: left;
+    justify-content: left;
     list-style: none;
     padding-left: 0px;
 }
@@ -369,6 +376,22 @@
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
+}
+
+#recomendador{
+}
+
+.botonrecomendado{
+    text-align: center;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #006b9c;
+    font-size: 20px;
+    
 }
 
 .botonfavoritas {
@@ -845,6 +868,8 @@
 
 
     .subtitulopeliculaespecifica {
+        display: flex;
+        flex-wrap: wrap;
         margin-top: 70px;
     }
 

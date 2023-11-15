@@ -27,7 +27,7 @@ fetch(DetalleSeries)
         console.log(error);
     });
 
-/* Valoracion,duracion */
+/* Valoracion,duracion, descripcion, fecha */
 
 
     fetch(DetalleSeries)
@@ -39,6 +39,7 @@ fetch(DetalleSeries)
         let datos = document.querySelector(".listadatosgrandes")
         datos.innerHTML = `  <li class="especificaciones">Valoracion: ${data.vote_average}/10</li>
                              <li class="especificaciones">Duracion: ${data.seasons.length} temporadas</li>
+                             <li class="especificaciones">Fecha de Estreno:${data.last_air_date}</li>
                              <li class="botonparagenero" class="especificaciones">Generos : <a href="./generoespecificos.html" style="color: aliceblue;" class="botongeneros"> ${data.genres.name}</a></li>
                              <li><p class="descripcionpelicula">${data.overview}</p>
 
@@ -52,22 +53,6 @@ fetch(DetalleSeries)
 
 
 
-/* fecha de estreno y descripcion */
-fetch(DetalleSeries)
-.then(function (res) {
-    return res.json();
-})
-
-.then(function (data) {
-    let fechadeestreno = document.querySelector(".fechadeestreno")
-    fechadeestreno.innerText = "Fecha de estreno: "+ data.first_air_date;
-    let descripcion = document.querySelector(".descripcionpelicula")
-    descripcion.innerText = data.overview
-})
-.catch(function (error) {
-
-    console.log(error);
-});
 
 
 /*Fetch boton de genero  */
@@ -107,4 +92,36 @@ fetch(DetalleSeries)
 .catch(function (error) {
     console.log(error);
 })
+
+let recomendaciones = `https://api.themoviedb.org/3/tv/${qsIdPelicula}/recommendations?api_key=${acaVaLaAPIKey}
+`
+let recomendacion = document.querySelector("#recomendador")
+
+
+
+
+fetch(recomendaciones)
+.then(function (res) {
+    return res.json();
+    
+})
+.then(function (data) {
+
+    console.log(data);
+
+    contenido = ` ` 
+    for (let i = 0; i < 5; i++) {
+        contenido += `<ul class="pelicula3">
+                        <li><img src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" class="portada"></li>
+                        <li><a href="./series.html?id=${data.results[i].id}" class="titulopelicula" target="_blank" style="color: aliceblue;">${data.results[i].name}</a></li>
+                        <li><a href="./series.html?id=${data.results[i].id}" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno : ${data.results[i].first_air_date}</a></li>
+                      </ul>`;
+    }
+
+    recomendacion.innerHTML = contenido;
+    
+})
+.catch(function (error) {
+    console.log(error);
+});
 

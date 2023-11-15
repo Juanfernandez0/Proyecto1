@@ -26,7 +26,8 @@ fetch(DetallePelicula)
         console.log(error);
     });
 
-/* Valoracion,duracion */
+/* Valoracion,duracion, descripcion, fecha */
+
 
 fetch(DetallePelicula)
 .then(function (res) {
@@ -37,7 +38,10 @@ fetch(DetallePelicula)
     let datos = document.querySelector(".listadatosgrandes")
     datos.innerHTML = `  <li class="especificaciones">Valoracion: ${data.vote_average}/10</li>
                          <li class="especificaciones">Duracion: ${data.runtime} minutos</li>
-                         <li class="botonparagenero" class="especificaciones">Generos : <a href="./generoespecificos.html" style="color: aliceblue;" class="botongeneros"> ${data.genres.name}</a></li>
+                         <li class="especificaciones">Fecha de Estreno: ${data.release_date}</li>
+                         <li class="botonparagenero" class="especificaciones">Generos : <a href="./generoespecificos.html" style="color: aliceblue;" class="botongeneros"> ${data.genres.name} </a></li>
+                         <li><p class="descripcionpelicula">${data.overview}</p>
+
                          `
 })
 .catch(function (error) {
@@ -47,22 +51,7 @@ fetch(DetallePelicula)
 });
 
 
-/* fecha de estreno y descripcion */
-fetch(DetallePelicula)
-.then(function (res) {
-    return res.json();
-})
 
-.then(function (data) {
-    let fechadeestreno = document.querySelector(".fechadeestreno")
-    fechadeestreno.innerText = "Fecha de estreno: "+ data.release_date;
-    let descripcion = document.querySelector(".descripcionpelicula")
-    descripcion.innerText = data.overview
-})
-.catch(function (error) {
-
-    console.log(error);
-});
 
 
 
@@ -106,3 +95,54 @@ fetch(DetallePelicula)
     console.log(error);
 })
 
+/*Recomendador*/
+
+let recomendaciones = `https://api.themoviedb.org/3/movie/${qsIdPelicula}/recommendations?api_key=${acaVaLaAPIKey}
+`
+let recomendacion = document.querySelector("#recomendador")
+
+
+
+
+
+
+let botonrecomendado = document.querySelector(".botonrecomendado")
+let inforecomendaciones = document.querySelector(".botonrecomendacioneschico")
+
+
+/*
+botonrecomendado.addEventListener('click',function () {
+    if (recomendacion.style.display === "none"){
+        recomendacion.style.display = "block";
+
+    }
+});
+*/
+
+
+
+
+fetch(recomendaciones)
+.then(function (res) {
+    return res.json();
+    
+})
+.then(function (data) {
+
+    console.log(data);
+
+    contenido = ` ` 
+    for (let i = 0; i < 5; i++) {
+        contenido += `<ul class="pelicula3">
+                        <li><img src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" class="portada"></li>
+                        <li><a href="./pelicula.html?id=${data.results[i].id}" class="titulopelicula" target="_blank" style="color: aliceblue;">${data.results[i].title}</a></li>
+                        <li><a href="./pelicula.html?id=${data.results[i].id}" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno : ${data.results[i].release_date}</a></li>
+                      </ul>`;
+    }
+
+    recomendacion.innerHTML = contenido;
+    
+})
+.catch(function (error) {
+    console.log(error);
+});
