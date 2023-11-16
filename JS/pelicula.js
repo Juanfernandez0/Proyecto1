@@ -106,18 +106,21 @@ let recomendacion = document.querySelector("#recomendador")
 
 
 
-let botonrecomendado = document.querySelector(".botonrecomendado")
+let botonrecomendado = document.querySelector(".cajaPeliculas")
 let inforecomendaciones = document.querySelector(".botonrecomendacioneschico")
 
 
-/*
-botonrecomendado.addEventListener('click',function () {
-    if (recomendacion.style.display === "none"){
-        recomendacion.style.display = "block";
 
+botonrecomendado.addEventListener('click',function () {
+    if (recomendacion.style.display = "none"){
+        recomendacion.style.display = "flex";}
+    else{
+        recomendacion.style.display = "none" ; 
     }
+
+    
 });
-*/
+
 
 
 

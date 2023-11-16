@@ -95,9 +95,23 @@ fetch(DetalleSeries)
 
 let recomendaciones = `https://api.themoviedb.org/3/tv/${qsIdPelicula}/recommendations?api_key=${acaVaLaAPIKey}
 `
-let recomendacion = document.querySelector("#recomendador")
+let recomendacion = document.querySelector("#recomendadorseries")
 
 
+let botonrecomendado = document.querySelector(".cajaPeliculas")
+let inforecomendaciones = document.querySelector(".botonrecomendacioneschico")
+
+
+
+botonrecomendado.addEventListener('click',function () {
+    if (recomendacion.style.display = "none"){
+        recomendacion.style.display = "flex";}
+    else{
+        recomendacion.style.display = "none" ; 
+    }
+
+    
+});
 
 
 fetch(recomendaciones)

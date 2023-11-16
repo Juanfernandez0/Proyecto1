@@ -379,6 +379,11 @@
 }
 
 #recomendador{
+    display: none;
+}
+
+#recomendadorseries{
+    display: none;
 }
 
 .botonrecomendado{
