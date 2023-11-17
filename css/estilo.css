@@ -167,7 +167,6 @@
     border: 4px solid #0f2831;
     margin-top: 120px;
     align-items: top;
-    height: 500px;
     background-color: #353a5c;
 
 }
@@ -184,6 +183,8 @@
     font-size: 30px;
 
 }
+
+
 
 .carteleraindex {
     display: flex;
@@ -305,6 +306,7 @@
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
+    border: 1px solid white;
 }
 
 .especificaciones {
@@ -697,18 +699,29 @@
 .textobusqueda {
     text-decoration: none;
 }
-
-.videobusqueda {
-    width: 1190px;
-    border: 5px solid #539dc9;
-
+.pelicula4{
+    width: 195px;
+    height: 345px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 25px;
+    background-color: #0f2831;
+    border: 2px solid #006b9c;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
-
-.gifbusqueda {
-    padding-bottom: 50px;
-
-}
-
+.carteleragrande3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 20px;
+    }
 /**FAVORITOS**/
 
 .carteleragrande2 {
