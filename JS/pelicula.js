@@ -107,6 +107,14 @@ let inforecomendaciones = document.querySelector(".botonrecomendacioneschico")
 
 
 
+
+
+
+
+
+
+
+
 fetch(recomendaciones)
 .then(function (res) {
     return res.json();
@@ -165,8 +173,9 @@ fetch(urltrailer)
 
     
     linkyt =`https://www.youtube.com/watch?v=${data.results[0].key}`
-    video =`<iframe  width="560" height="315" src=https://www.youtube.com/watch?v=${data.results[0].key} frameborder="0" class="trailervideo" allowfullscreen></iframe>`
-    cajatrailer.innerHTML = video}
+    cajatrailer.innerHTML =  `<a href="${linkyt}" class= "textonotrailer" style="color: aliceblue;">Ir al trailer</a>`
+
+}
     
     
 })

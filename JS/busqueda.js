@@ -24,23 +24,20 @@ fetch(url)
     let miData = data.results;
     let contenido = " ";
 
-    if(miData.length === 0){
-        contenido = `    <p>Lo lamentamos, pero no tenemos resultados para su busqueda</p>
-        `
-    }
-    else{
+    if (miData.length ===0){
+        contenido = `<h3 style="color: aliceblue;">Lo sentimos pero no encontramos resultados para tu busqueda :(</h3>`
+    } else {
 
-    for (let i = 0; i < miData.length; i++) {
+
+        for (let i = 0; i < miData.length; i++) {
         
-        contenido += `<ul class="pelicula4">
-        <li><img src="https://image.tmdb.org/t/p/w500/${miData[i].poster_path}" class="portada"></li>
-        <li><a href="./pelicula.html?id=${miData[i].id}" class="titulopelicula" target="_blank" style="color: aliceblue;">${miData[i].title}</a></li>
-        <li><a href="./pelicula.html?id=${miData[i].id}" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno : ${miData[i].release_date}</a></li>
-      </ul>`
-
-
-        
+            contenido += `<ul class="pelicula4">
+            <li><img src="https://image.tmdb.org/t/p/w500/${miData[i].poster_path}" class="portada"></li>
+            <li><a href="./pelicula.html?id=${miData[i].id}" class="titulopelicula" target="_blank" style="color: aliceblue;">${miData[i].title}</a></li>
+            <li><a href="./pelicula.html?id=${miData[i].id}" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno : ${miData[i].release_date}</a></li>
+          </ul>`
     }
+
     }
 
     contenedorgrande.innerHTML = contenido
