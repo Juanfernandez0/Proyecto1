@@ -102,26 +102,8 @@ let recomendaciones = `https://api.themoviedb.org/3/movie/${qsIdPelicula}/recomm
 let recomendacion = document.querySelector("#recomendador")
 
 
-
-
-
-
 let botonrecomendado = document.querySelector(".cajaPeliculas")
 let inforecomendaciones = document.querySelector(".botonrecomendacioneschico")
-
-
-
-botonrecomendado.addEventListener('click',function () {
-    if (recomendacion.style.display = "none"){
-        recomendacion.style.display = "flex";}
-    else{
-        recomendacion.style.display = "none" ; 
-    }
-
-    
-});
-
-
 
 
 
@@ -149,3 +131,85 @@ fetch(recomendaciones)
 .catch(function (error) {
     console.log(error);
 });
+
+
+
+botonrecomendado.addEventListener('click',function () {
+    if (recomendacion.style.display = "none"){
+        recomendacion.style.display = "flex";}
+    else{
+        recomendacion.style.display = "none" ; 
+    }
+
+    
+});
+
+
+
+/*trailer*/
+
+let urltrailer = `https://api.themoviedb.org/3/movie/${qsIdPelicula}/videos?api_key=${acaVaLaAPIKey}`
+let cajatrailer = document.querySelector(".cajatrailer")
+fetch(urltrailer)
+.then(function(res) {
+    return res.json();
+    
+})
+.then(function(data) {
+    console.log(data);
+    if(data.results.length == 0){
+        cajatrailer.innerHTML =` <p class= "textonotrailer" > Lo sentimos pero la serie no cuenta con trailer :( </p>`
+    }
+
+    else{
+
+    
+    linkyt =`https://www.youtube.com/watch?v=${data.results[0].key}`
+    video =`<iframe  width="560" height="315" src=https://www.youtube.com/watch?v=${data.results[0].key} frameborder="0" class="trailervideo" allowfullscreen></iframe>`
+    cajatrailer.innerHTML = video}
+    
+    
+})
+.catch(function(error) {
+    console.log(error);
+    
+})
+
+
+
+
+
+
+
+let linkreviews = `https://api.themoviedb.org/3/movie/${qsIdPelicula}/reviews?api_key=${acaVaLaAPIKey}`
+let cajareviews = document.querySelector(".reviews")
+fetch(linkreviews)
+
+.then(function (res) {
+    return res.json();
+    
+})
+.then(function (data) {
+    console.log(data);
+    contenido = `<h3 style="color: white;" class="subtitulosindex" >Reviews</h3>`
+    if(data.results.length == 0){
+        contenido +=` <p class= "textonotrailer" > Lo sentimos pero la pelicula no cuenta con reviews :( </p>`
+    }
+
+    else{
+    for (let i = 0; i < 3; i++) {
+        contenido +=`<p class="autor" style="color: white;">${data.results[i].author}:</p>
+                    <p class="textoreview" style="color: white;"> ${data.results[i].content}</p>`
+
+        
+    }
+
+    }
+    cajareviews.innerHTML = contenido
+
+
+})
+.catch(function (error) {
+    console.log(error);
+    
+})

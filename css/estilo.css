@@ -290,7 +290,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     background-color: #4e5f64;
     padding-top: 30px;
     margin-top: 10px;
@@ -399,6 +398,44 @@
     background-color: #006b9c;
     font-size: 20px;
     
+}
+
+.reviews{
+    background-color: #353a5c;
+    border: 2px solid #539dc9;
+    padding: 10px;
+    width: 1176px;
+}
+
+.textonotrailer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 5px;
+    padding: 100px;
+    border: 2px solid #555555;
+}
+.trailervideo{
+    border: 3px solid #555555 ;
+    padding-right: 5px;
+
+
+}
+
+.cajatrailer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.autor{
+    font-size: 17px;
+}
+
+.textoreview{
+    font-size: 12px;
+    padding-bottom: 30px;
+
 }
 
 .botonfavoritas {
