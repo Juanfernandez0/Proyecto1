@@ -24,6 +24,11 @@ fetch(url)
     let miData = data.results;
     let contenido = " ";
 
+    if(miData.length === 0){
+        contenido = `    <p>Lo lamentamos, pero no tenemos resultados para su busqueda</p>
+        `
+    }
+    else{
 
     for (let i = 0; i < miData.length; i++) {
         
@@ -32,7 +37,10 @@ fetch(url)
         <li><a href="./pelicula.html?id=${miData[i].id}" class="titulopelicula" target="_blank" style="color: aliceblue;">${miData[i].title}</a></li>
         <li><a href="./pelicula.html?id=${miData[i].id}" class="titulopelicula" target="_blank" style="color: aliceblue;">Fecha de estreno : ${miData[i].release_date}</a></li>
       </ul>`
+
+
         
+    }
     }
 
     contenedorgrande.innerHTML = contenido
